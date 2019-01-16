@@ -117,8 +117,8 @@ export default {
             background: rgba(255, 255, 255, .1)
             text-align: center
             &.highlight
-              background: rgb(0, 160, 220)
-            .icon-shopping_cart
+              background: #FAB699
+            .iconfont
               font-size: .48rem
               line-height: .88rem
               color: rgba(255, 255, 255, .4)
@@ -173,6 +173,6 @@ export default {
           &.not-enough
             background: rgba(255, 255, 255, .1)
           &.enough
-            background: rgb(0, 180, 60)
+            background: #f01414
             color: rgb(255, 255, 255)
 </style>
