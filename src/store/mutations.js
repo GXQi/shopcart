@@ -1,10 +1,16 @@
 const mutations = {
-  /*increment: (state) => {
-    state.count = state.count + 5
+  getList (state, list) {
+    state.list = list
+    console.log(list)
   },
-  decrement: (state) => {
-    state.count = state.count - 3
-  }*/
+  getTotalPrice (state, totalPrice) {
+    state.totalPrice = totalPrice
+    console.log(totalPrice)
+  },
+  getTotalNum (state, totalNum) {
+    state.totalNum = totalNum
+    console.log(totalNum)
+  }
 }
 
 export default mutations

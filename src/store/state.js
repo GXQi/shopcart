@@ -1,9 +1,11 @@
-let defaultNum = 0
+let defaultList = 0
 let defaultPrice = 0.00
 let defaultTotalNum = 0
 
 const state = {
-  count: 0
+  list: defaultList,
+  totalPrice: defaultPrice,
+  totalNum: defaultTotalNum
 }
 
 export default state
