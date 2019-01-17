@@ -20,9 +20,9 @@
             <p class="price">￥<span>{{ item.price }}</span></p>
           </div>
           <div class="item-num">
-            <span class="iconfont">&#xe612;</span>
+            <span class="iconfont" @click="add(item.num)">&#xe612;</span>
             <span class="num">{{ item.num }}</span>
-            <span class="iconfont">&#xe628;</span>
+            <span class="iconfont" @click="decrease">&#xe628;</span>
           </div>
         </div>
       </div>
@@ -34,6 +34,7 @@
 <script>
 import axios from 'axios'
 import CartPrice from './CartPrice'
+import { mapState, mapMutations } from 'vuex'
 export default {
   name: 'ShopCart',
   components: {
@@ -59,6 +60,14 @@ export default {
         this.totalPrice = data.totalPrice
         this.totalNum = data.totalNum
       }
+    },
+    add (num) {
+      num++
+      console.log(num)
+    },
+    decrease (num) {
+      num--
+      console.log(num)
     }
   },
   mounted () {
